@@ -198,6 +198,33 @@ main.cpp.s:
 	cd "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build" && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pid.o: pid.cpp.o
+
+.PHONY : pid.o
+
+# target to build an object file
+pid.cpp.o:
+	cd "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build" && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/pid.cpp.o
+.PHONY : pid.cpp.o
+
+pid.i: pid.cpp.i
+
+.PHONY : pid.i
+
+# target to preprocess a source file
+pid.cpp.i:
+	cd "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build" && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/pid.cpp.i
+.PHONY : pid.cpp.i
+
+pid.s: pid.cpp.s
+
+.PHONY : pid.s
+
+# target to generate assembly for a file
+pid.cpp.s:
+	cd "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build" && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/pid.cpp.s
+.PHONY : pid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,6 +241,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pid.o"
+	@echo "... pid.i"
+	@echo "... pid.s"
 .PHONY : help
 
 
