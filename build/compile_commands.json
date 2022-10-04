@@ -5,6 +5,11 @@
   "file": "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/app/main.cpp"
 },
 {
+  "directory": "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build/app",
+  "command": "/usr/bin/c++   -I\"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/include\"  -Wall -Wextra -Wpedantic -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/pid.cpp.o -c \"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/app/pid.cpp\"",
+  "file": "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/app/pid.cpp"
+},
+{
   "directory": "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/build/test",
   "command": "/usr/bin/c++   -I\"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/test/../vendor/googletest/googletest/include\" -I\"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/include\" -I\"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/vendor/googletest/googletest/include\"  -Wall -Wextra -Wpedantic -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/main.cpp.o -c \"/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/test/main.cpp\"",
   "file": "/home/jp/ENPM808X/Assignments/TDD Exercise/PA/test_driven_developoment/test/main.cpp"
