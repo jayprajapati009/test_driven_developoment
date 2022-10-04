@@ -27,14 +27,8 @@
  * @param lowest_velocity 
  */
 
-PID::PID(double kp_, double kd_, double ki_, double dt_,
-            double largest_velocity_, double lowest_velocity_) {
-    PID::kp = kp_;
-    PID::kd = kd_;
-    PID::ki = ki_;
-    PID::dt = dt_;
-    PID::largest_velocity = largest_velocity_;
-    PID::lowest_velocity = lowest_velocity_;
+PID::PID(double kp_, double kd_, double ki_, double dt_,double largest_velocity_, double lowest_velocity_):kp (kp_),kd (kd_),ki(ki_) ,dt(dt_),largest_velocity(largest_velocity_),lowest_velocity(lowest_velocity_){
+   
 }
 
 /**
@@ -66,13 +60,13 @@ double PID::calculate(double desired_velocity, double present_velocity) {
     // Calculating total output
     double output = Pout + Iout + Dout;
 
-    if (output > largest_velocity) {
-        output = largest_velocity;
-    } else if (output < lowest_velocity) {
-        output = lowest_velocity;
-    } else {
-        output = output;
-    }
+    // if (output > largest_velocity) {
+    //     output = largest_velocity;
+    // } else if (output < lowest_velocity) {
+    //     output = lowest_velocity;
+    // } else {
+    //     output = output;
+    // }
 
     // Save error to previous error
     pre_error = error;

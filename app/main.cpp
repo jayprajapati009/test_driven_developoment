@@ -19,8 +19,10 @@
  * @return int 
  */
 int main() {
-    PID pid(1, 1, 1, 0.1, 1, -1);
-    double val = 3;
+    PID pid(0.1,0.01,0.5,0.1,100,0);
+    
+    double val = 30;
+
     // std::cout << pid.calculate(0, val);
     for (int i = 0; i < 100; i++) {
         double inc = pid.calculate(0, val);
