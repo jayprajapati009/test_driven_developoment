@@ -27,13 +27,14 @@
  * @param lowest_velocity 
  */
 
-PID::PID(double kp_, double kd_, double ki_, double dt_, double largest_velocity_, double lowest_velocity_){
-    double kp = kp_;
-    double kd = kd_;
-    double ki = ki_;
-    double dt = dt_;    
-    double  largest_velocity= largest_velocity_;    
-    double lowest_velocity= lowest_velocity_;    
+PID::PID(double kp_, double kd_, double ki_, double dt_,
+            double largest_velocity_, double lowest_velocity_) {
+    PID::kp = kp_;
+    PID::kd = kd_;
+    PID::ki = ki_;
+    PID::dt = dt_;
+    PID::largest_velocity = largest_velocity_;
+    PID::lowest_velocity = lowest_velocity_;
 }
 
 /**
@@ -43,8 +44,8 @@ PID::PID(double kp_, double kd_, double ki_, double dt_, double largest_velocity
  * @param present_velocity 
  * @return double 
  */
-double PID::calculate( double desired_velocity, double present_velocity) {
 
+double PID::calculate(double desired_velocity, double present_velocity) {
     double pre_error = 0;
     double integral = 0;
 
@@ -65,11 +66,12 @@ double PID::calculate( double desired_velocity, double present_velocity) {
     // Calculating total output
     double output = Pout + Iout + Dout;
 
-    if( output > largest_velocity ) {
+    if (output > largest_velocity) {
         output = largest_velocity;
-    }
-    else if( output < lowest_velocity ) {
+    } else if (output < lowest_velocity) {
         output = lowest_velocity;
+    } else {
+        output = output;
     }
 
     // Save error to previous error
@@ -82,6 +84,6 @@ double PID::calculate( double desired_velocity, double present_velocity) {
  * @brief Destroy the PID::PID object
  * 
  */
-PID::~PID(){}
+PID::~PID() {}
 
 #endif
