@@ -2,7 +2,7 @@
  * @file main.cpp
  * @author Joshua Gomes (GitID:joshuag1214),Venkata Sairam Polina (GitID:sairampolina)
  * @brief 
- * @version 0.1
+ * @version 1.1
  * @date 2022-09-29
  * //TODO stub
  * @copyright Copyright (c) 2022
@@ -19,10 +19,10 @@
  * @return int 
  */
 int main() {
-    PID pid(0.5, 0.44, 1, 0.1, 100, 100);
-    double val = 0;
+    PID pid(1, 1, 1, 0.1, 1, -1);
+    double val = 3;
     // std::cout << pid.calculate(0, val);
-    for (int i = 0; i < 200; i++) {
+    for (int i = 0; i < 100; i++) {
         double inc = pid.calculate(0, val);
         std::cout << "Val: " << val << ", inc: " << inc << std::endl;
         val += inc;
