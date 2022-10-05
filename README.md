@@ -1,24 +1,54 @@
 # Test driven development : Group2
 
-## part 1: (pair A)
+## Part 1: (Pair A)
 
 Driver: Joshua Gomes (jgomes14@umd.edu) 
 
 Navigator: Venkata sai ram polina (sairamp@umd.edu)
 
-# Instructions in running main.cpp, test.cpp and coverage report
+## Part 2: (Pair B)
+
+Driver: Jay Prajapati (jayp@umd.edu) 
+
+Navigator: Tharun V. Puthanveettil (tvpian@umd.edu)
+
+
+# Instructions to the run the code
+
+Go to the cloned directory,
+```sh
+cd {path to the directory/test_driven_development}
 ```
-git clone --recursive https://github.com/joshuag1214/test_driven_developoment
-cd <path to repository>
-mkdir build
-cd build
-sudo apt-get install lcov
-cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
+
+Now we need to generate the build files,
+```sh
+mkdir build && cd build
+```
+```sh
 cmake ..
+```
+```sh
 make
+```
+Run the tests,
+```sh
+./test/cpp-test
+```
+Try out the PID Controller,
+```sh
+./app/shell-app
+```
+Now, to generate the coverage report,
+```sh
+sudo apt-get install lcov
+```
+```sh
+cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
+```
+```sh
+make
+```
+```sh
 make code_coverage
-Run tests: ./test/cpp-test
-Run program: ./app/shell-app
-
-
-
+```
+And you will get the coverage report in /build/coverage/index.html
