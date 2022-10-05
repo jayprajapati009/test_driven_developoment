@@ -10,7 +10,7 @@ Navigator: Venkata sai ram polina (sairamp@umd.edu)
 
 Driver: Jay Prajapati (jayp@umd.edu) 
 
-Navigator: Venkata sai ram polina (sairamp@umd.edu)
+Navigator: Tharun V. Puthanveettil (tvpian@umd.edu)
 
 
 # Instructions to the run the code
